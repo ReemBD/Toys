@@ -1,0 +1,49 @@
+@import "../setup/variables";
+
+.toy-edit {
+    margin-inline-start: $header-gap;
+    .frm {
+        .grid-container{
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 1fr;
+            justify-items: left;
+            .col-labels>* {
+                // padding: 6px 0 0 7px;
+                font-size: 1.5em;
+                flex-basis: 50px;
+                .type-label {
+                    margin-top: 30px;
+                }
+            }
+            .col-inputs{
+                &>*{
+                    flex-basis: 50%;
+                }
+                .type-input {
+                    justify-self: flex-start;
+                    max-height: 31px;
+                    background-color: $clr2;
+                    padding-inline-start: 10px;
+                    font-size: 1.2em;
+                }
+            }
+            .save-btn {
+                grid-column: 2;
+                margin-top: 20px;
+                align-self: end;
+            }
+        }
+        .upload-label {
+            cursor: pointer;
+            background-color: $clr4;
+        }
+        .inStock-input {
+            // -webkit-appearance: none;
+            // -moz-appearance: none;
+            // appearance: none;
+            width: 20px;
+            align-self: flex-start;
+        }
+     
+    }
+}

@@ -1,0 +1,35 @@
+@import "../setup/variables.scss";
+@import "../setup/mixin";
+
+.about .main-content {
+    margin-inline-start: $header-gap;
+    p {
+        max-width: 50%;
+    }
+    .about-site {
+        padding-bottom: 50px;
+        border-bottom: 2px solid $clr1;
+        &-title {
+            margin-bottom: 10px;
+        }
+    }
+
+    .about-me {
+        padding-top: 50px;
+        &-title {
+            margin-bottom: 20px;
+        }
+        .wrapper {
+            align-items: center;
+        }
+        .image-container {
+            margin-inline-end: 20px;
+            width: 200px;
+            @include aspect-ratio(1, 1);
+            .profile-photo {
+                border-radius: 999px;
+                width: 100%;
+            }
+        }
+    }
+}

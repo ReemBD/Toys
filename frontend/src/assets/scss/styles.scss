@@ -1,0 +1,21 @@
+@import "basics/helpers.scss";
+@import "basics/layout.scss";
+@import "basics/base.scss";
+@import "basics/buttons.scss";
+
+/*COMPONENTS*/
+
+@import "cmps/AppHeader.scss";
+@import "cmps/ToyAppPage.scss";
+@import "cmps/ToyCard.scss";
+@import "cmps/ToyDetails.scss";
+@import "cmps/ToyEdit.scss";
+@import "cmps/ToyFilter.scss";
+@import "cmps/ToyList.scss";
+@import "cmps/LoginSignup.scss";
+@import "cmps/Uploader.scss";
+@import "cmps/ToyReview.scss";
+@import 'cmps/UserDetails.scss';
+@import 'cmps/AppHeader.scss';
+@import 'cmps/About.scss';
+@import 'cmps/Chat.scss';

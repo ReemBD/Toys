@@ -1,0 +1,61 @@
+@import "../setup/_variables.scss";
+@import "../setup/mixin.scss";
+.toy-app-page {
+    .add-btn {
+        color: white;
+        position: fixed;
+        bottom: 100px;
+        left: -80px;
+        z-index:11;
+        transition: left .3s;
+        background-color: $clr4;
+        color: #212121;
+        &::after {
+            content: "+";
+            padding-left: 15px;
+        }
+        &:hover {
+            left: -3px;
+            background-color: $clr4;
+
+        }
+    }
+    .greeting {
+        @include main-title;
+    }
+    .pagination{
+        margin-inline-start: $header-gap;
+        margin-bottom: 30px;
+        display: flex;
+        .pages {
+            flex-grow: 1;
+            padding: 0 100px;
+            display: flex;
+            justify-content: space-between;
+            max-width: 800px;
+            .page-btn.active {
+                color: white;
+                background-color: lighten($clr1,20);
+            }
+         
+        }
+        .paginate-btn {
+            padding: 10px 25px;
+            background-color: darken($clr2,10) !important;
+            // color: #fff;
+        }
+        .next-page {
+            // margin-inline-start: 100px;
+        }
+        .prev-page {
+            // margin-inline-end: 100px;
+        }
+    }
+}
+
+@for $i from 1 through 3 {
+    .greeting span:nth-child(#{$i}) {
+        animation-name: fadeInRight;
+        animation-duration: #{$i*1.2 + "s"};
+    }
+}

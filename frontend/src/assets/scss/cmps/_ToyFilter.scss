@@ -1,0 +1,9 @@
+.toy-filter {
+    margin-inline-start: $header-gap;
+    .flex {
+        align-content: center;
+    }
+    .flex .name {
+        align-self: center;
+    }
+}

@@ -1,0 +1,37 @@
+@import "../setup/variables";
+
+.card-preview {
+    min-width: 275px;
+    max-height: 200px;
+    flex-basis: 100%;
+    background-color: $clr2 !important;
+    .type {
+        font-size: 14px;
+    }
+    .pos {
+        margin-bottom: 12px;
+    }
+    .bullet {
+        display: inline-block;
+        margin: 0 2px;
+        transform: scale(0.8);
+    }
+    img {
+        // max-width: 200px;
+        width: 250px;
+        object-fit: contain;
+        max-height: 100%;
+        padding: 10px;
+    }
+    a{
+        color:inherit;
+    }
+    .edit-btn {
+        background-color: lighten($clr1,40);
+        a {
+
+            color: black;
+        }
+    }
+   
+}

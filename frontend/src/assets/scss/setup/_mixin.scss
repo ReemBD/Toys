@@ -1,0 +1,36 @@
+@mixin main-title{
+    background-color: #ffffffc2;
+    width: 100vw;
+    padding: 18px 0 20px 240px;
+    color: lighten($clr1,10);
+    margin-bottom: 20px;
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+    // font-weight: 500;
+    text-transform: lowercase;
+    // font-family: "Josefin Sans", sans-serif;
+
+}
+
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+    overflow: hidden;
+    &::before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: ($height / $width) * 100%;
+    }
+    > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  
+    > img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }

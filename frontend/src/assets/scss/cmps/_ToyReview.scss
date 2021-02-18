@@ -1,0 +1,30 @@
+@import "../setup/variables.scss";
+@import "../setup/variables.scss";
+@import "../setup/mixin.scss";
+
+.toy-review {
+    .title {
+        @include main-title;
+    }
+
+    .review-content {
+        font-family: roboto;
+        min-width: 400px;
+        min-height: 228px;
+        margin-bottom: 20px;
+        background-color: lighten($clr1, 55);
+        &:focus {
+            border: none;
+            outline: 3px solid $clr1;
+        }
+        &::placeholder {
+            font-size: 1.2em;
+        }
+    }
+
+    .review-form {
+        margin-inline-start: $header-gap;
+        align-items: flex-start;
+    }
+
+}

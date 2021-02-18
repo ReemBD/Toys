@@ -1,0 +1,50 @@
+@import '../setup/variables';
+@import '../setup/mixin';
+.toy-details-page {
+    .title {
+        @include main-title;
+        animation-name: fadeInRight;
+    }
+}
+.toy-details {
+    padding-top: $pt-page;
+    // justify-content: space-between;
+    margin-inline-start: $header-gap;
+    align-items: start;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    .img-container {
+        margin-inline-end: 30px;
+        border-radius: 10px;
+        width: 250px;
+        @include aspect-ratio(1,1)
+    }
+    .wrapper {
+        margin-inline-end: 80px;
+    }
+    .name {
+        margin-bottom: 10px;
+        color: lighten($clr1,20);
+        font-size:2.5em;
+    }
+    .type {
+        margin-bottom: 95px;
+    }
+    
+    .add-review-btn {
+        margin-bottom: 22px;
+        align-self: flex-start;
+    }
+
+    .chat-icon {
+        position: fixed;
+        right: 40px;
+        bottom: 40px;
+        font-size: 3em;
+        cursor: pointer;
+        transition: .2s all;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}

@@ -1,0 +1,59 @@
+@import "../setup/variables";
+
+.chat {
+    // display: none;
+    box-shadow: -4px -1px 9px #5f5f5f, 0px 7px 9px #5f5f5f;
+    position: fixed;
+    height: 600px;
+    right: 100px;
+    bottom: 80px;
+    background-color: #dbd8ec;
+    z-index: 12;
+    border-radius: 15px;
+    animation-name: zoomInRight;
+    animation-duration: 0.5s;
+    display: none;
+    width: 500px;
+
+    &.active {
+        display: block;
+    }
+    .chat-msgs {
+        font-size: 1.2em;
+        & > * {
+            margin-bottom: 10px;
+            .from {
+                font-weight: 700;
+                margin-inline-end: 10px;
+            }
+        }
+    }
+    &-main-content {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    &-topic {
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        margin-top: 20px;
+        font-size: 1.5em;
+        align-items: center;
+        border-bottom: 1px solid #fff;
+        .fas {
+            margin-inline-end: 10px;
+            cursor: pointer;
+        }
+    }
+    .msg-form {
+        width: 100%;
+        .msg-input {
+            width: 100%;
+        }
+    }
+}
+
+.chat-layout {
+    margin-right: 10px;
+    margin-left: 10px;
+}

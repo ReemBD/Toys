@@ -1,0 +1,53 @@
+/* HELPERS
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+.align-center {
+    align-items: center;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.grid {
+    display: grid;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+
+.display-none {
+    display: none;
+}
+.transition02{
+    transition: all .2s
+} */

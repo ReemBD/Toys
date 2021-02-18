@@ -1,0 +1,41 @@
+.flex {
+    display: flex;
+    &-column {
+        flex-direction: column;
+    }
+    &-center {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.space {
+    &-between {
+        justify-content: space-between;
+    }
+    &-around {
+        justify-content: space-around;
+    }
+    &-evenly {
+        justify-content: space-evenly;
+    }
+}
+
+.grid {
+    display: grid;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.display-none {
+    display: none;
+}
+.transition02 {
+    transition: all 0.2s;
+}

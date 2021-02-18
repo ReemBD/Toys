@@ -1,0 +1,33 @@
+@import "../setup/variables.scss";
+
+.title {
+    .logout-btn {
+        margin-inline-end: 20px;
+    }
+}
+
+.login-signup {
+    padding-top: $pt-page;
+    margin-inline-start: $header-gap;
+    .login-form {
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .username-input, .password-input {
+            background-color: darken($clr3,10);
+        }
+    }
+    .signup-form{
+        .signup-title{
+            margin-bottom: 20px;
+            font-size:2em;
+        }
+        .signup-btn{
+            margin-top: 20px;
+            background-color: #f5f478;
+        }
+    }
+
+}
